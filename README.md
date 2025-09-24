@@ -48,3 +48,45 @@ print(f'Длина (символов): {len(ln) + len(n) + len(nof) + 2}')
 ```
 ![Картинка 1](./images/lab1/img5.png)
 
+### Задание 6
+```python
+n = int(input())
+och, zaoch = 0, 0
+for i in range(n):
+    try:
+        last_name, name, age, format = list(input(f"in_{i+1}: ").split())
+        age = int(age)
+        if format == 'False': zaoch += 1
+        elif format == 'True': och += 1 
+    except: pass
+print(f'out: {och} {zaoch}')
+```
+![Картинка 1](./images/lab1/img6.png)
+
+
+### Задание 7
+```python
+line = input("in: ")
+word_started = False
+origin = []
+step = 0
+f_i = 0
+s_i = 0
+for i in range(len(line)):
+    symb = line[i]
+    if symb.isupper() and not word_started:
+        word_started = True
+        f_i = i
+        origin.append(symb)
+    if word_started and symb.isdigit() and not s_i:
+        s_i = i+1
+        step = s_i - f_i
+    if word_started and step and (i-f_i)%step == 0:
+        origin.append(symb)
+    if word_started and symb == '.':
+        break
+print(f"out: {''.join(origin)}")
+
+```
+![Картинка 1](./images/lab1/img7.png)
+
