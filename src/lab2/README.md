@@ -111,5 +111,3 @@ def format_record(rec: tuple[str, str, float]) -> str:
 ![Картинка 1](./images/lab2/tuples_wrong_value_fio.png)
 
 
-```
-![Картинка 1](./images/lab1/img7.png)
