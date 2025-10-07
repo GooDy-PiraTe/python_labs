@@ -15,4 +15,11 @@ def format_record(rec: tuple[str, str, float]) -> str:
         else: raise ValueError
     else: raise ValueError('3 elements needed')
 
-
+#TESTS
+print(format_record( ("Иванов Иван Иванович", "BIVT-25", 4.6) ))
+print(format_record( ("Петров Пётр", "IKBO-12", 5.0) ))
+print(format_record( ("Петров Пётр Петрович", "IKBO-12", 4.6) ))
+print(format_record( ("  сидорова   анна   сергеевна", "ABB-01", 3.999) ))
+print(format_record( ("Иванов Иван Иванович", "BIVT-25", 'asdsda') ))
+print(format_record( ("Иванов Иван Иванович", 7575, 5.0) ))
+print(format_record( ("Иванов", "BIVT-25", 5.00) ))

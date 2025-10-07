@@ -34,3 +34,20 @@ def col_sums(mat: list[list[float | int]]) -> list[float]:
         for x in range(len(el_y)):
             res[x] += el_y[x]
     return res
+
+#TRANSPOSE TESTS
+print(transpose( [[1], [2], [3]] ))
+print(transpose( [[1, 2, 3]] ))
+print(transpose( [[1, 2], [3, 4]] ))
+print(transpose( [] ))
+print(transpose( [[1, 2], [3]] ))
+#ROW_SUMS TESTS
+print(row_sums( [[1, 2, 3], [4, 5, 6]] ))
+print(row_sums( [[-1, 1], [10, -10]] ))
+print(row_sums( [[0, 0], [0, 0]] ))
+print(row_sums( [[1, 2], [3]] ))
+#COL_SUMS
+print(col_sums( [[1, 2, 3], [4, 5, 6]] ))
+print(col_sums( [[-1, 1], [10, -10]] ))
+print(col_sums( [[0, 0], [0, 0]]))
+print(col_sums( [[1, 2], [3]] ))
