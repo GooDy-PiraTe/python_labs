@@ -10,7 +10,7 @@ def min_max(nums: list[float | int]) -> tuple[float | int, float | int]:
     if len(nums) == 0: raise ValueError
     return min(nums), max(nums)
 ```
-![Картинка 1](images/lab2/arrays_min_max.png)
+![Картинка 1](python_labs/images/lab2/arrays_min_max.png)
 ![Картинка 2](./images/lab2/arrays_min_max_error.png)
 Функция unique_sorted
 ```python
