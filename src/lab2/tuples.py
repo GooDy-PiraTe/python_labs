@@ -1,7 +1,4 @@
-#(fio: str, group: str, gpa: float)
-
 def format_record(rec: tuple[str, str, float]) -> str:
-    #Иванов И.И., гр. BIVT-25, GPA 4.60
     if type(rec) != tuple and type(rec) != list: raise TypeError
     if len(rec) == 3:
         fio, group, gpa = rec
