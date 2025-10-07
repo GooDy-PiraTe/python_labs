@@ -11,7 +11,8 @@ def min_max(nums: list[float | int]) -> tuple[float | int, float | int]:
     return min(nums), max(nums)
 ```
 ![Картинка 1](python_labs/images/lab2/arrays_min_max.png)
-![Картинка 2](./images/lab2/arrays_min_max_error.png)
+
+![Картинка 2](../images/lab2/arrays_min_max_error.png)
 Функция unique_sorted
 ```python
 def unique_sorted(nums: list[float | int]) -> list[float | int]:
