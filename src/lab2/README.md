@@ -10,7 +10,7 @@ def min_max(nums: list[float | int]) -> tuple[float | int, float | int]:
     if len(nums) == 0: raise ValueError
     return min(nums), max(nums)
 ```
-![Картинка 1](python_labs/images/lab2/arrays_min_max.png)
+![Картинка 1](./screenshots/arrays_min_max.png)
 
 ![Картинка 2](./screenshots/arrays_min_max_error.png)
 Функция unique_sorted
@@ -20,7 +20,7 @@ def unique_sorted(nums: list[float | int]) -> list[float | int]:
     uni_nums.sort() 
     return uni_nums
 ```
-![Картинка 1](./images/lab2/arrays_unique_sorted.png)
+![Картинка 1](./screenshots/arrays_unique_sorted.png)
 Функция flatten
 ```python
 def flatten(mat: list[list | tuple]) -> list:
@@ -32,8 +32,8 @@ def flatten(mat: list[list | tuple]) -> list:
             raise TypeError
     return new_list
 ```
-![Картинка 1](./images/lab2/arrays_flatten.png)
-![Картинка 2](./images/lab2/arrays_flatten_error.png)
+![Картинка 1](./screenshots/arrays_flatten.png)
+![Картинка 2](./screenshots/arrays_flatten_error.png)
 
 
 ### Задание B
@@ -51,8 +51,8 @@ def transpose(mat: list[list[float | int]]) -> list[list]:
             res[x][y] = mat[y][x]
     return res
 ```
-![Картинка 3](./images/lab2/matrix_transpose.png)
-![Картинка 3](./images/lab2/matrix_transpose_error.png)
+![Картинка 3](./screenshots/matrix_transpose.png)
+![Картинка 3](./screenshots/matrix_transpose_error.png)
 Фукнция row_sums
 ```python
 def row_sums(mat: list[list[float | int]]) -> list[float]: #сумма каждой строки
@@ -67,8 +67,8 @@ def row_sums(mat: list[list[float | int]]) -> list[float]: #сумма кажд�
     return res
             
 ```
-![Картинка 3](./images/lab2/matrix_row_sums.png)
-![Картинка 3](./images/lab2/matrix_row_sums_error.png)
+![Картинка 3](./screenshots/matrix_row_sums.png)
+![Картинка 3](./screenshots/matrix_row_sums_error.png)
 Фукнция col_sums
 ```python
 def col_sums(mat: list[list[float | int]]) -> list[float]:
@@ -82,8 +82,8 @@ def col_sums(mat: list[list[float | int]]) -> list[float]:
             res[x] += el_y[x]
     return res
 ```
-![Картинка 3](./images/lab2/matrix_col_sums.png)
-![Картинка 3](./images/lab2/matrix_col_sums_error.png)
+![Картинка 3](./screenshots/matrix_col_sums.png)
+![Картинка 3](./screenshots/matrix_col_sums_error.png)
 
 
 ### Задание C
@@ -105,10 +105,10 @@ def format_record(rec: tuple[str, str, float]) -> str:
         else: raise ValueError
     else: raise ValueError('3 elements needed')
 ```
-![Картинка 1](./images/lab2/tuples.png)
-![Картинка 1](./images/lab2/tuples_wrong_gpa.png)
-![Картинка 1](./images/lab2/tuples_wrong_group.png)
-![Картинка 1](./images/lab2/tuples_wrong_type_fio.png)
-![Картинка 1](./images/lab2/tuples_wrong_value_fio.png)
+![Картинка 1](./screenshots/tuples.png)
+![Картинка 1](./screenshots/tuples_wrong_gpa.png)
+![Картинка 1](./screenshots/tuples_wrong_group.png)
+![Картинка 1](./screenshots/tuples_wrong_type_fio.png)
+![Картинка 1](./screenshots/tuples_wrong_value_fio.png)
 
 
