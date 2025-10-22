@@ -18,22 +18,22 @@ def flatten(mat: list[list | tuple]) -> list:
     return new_list
 
 
+
 #MIN_MAX TESTS
-print(min_max( [3, -1, 5, 5, 0] )) 
-print(min_max( [42] ))
-print(min_max( [-5, -2, -9] ))
-print(min_max( [1.5, 2, 2.0, -3.1] ))
+print(min_max( [4, 14, 4.5, 20, 20.5] )) 
+print(min_max( [100] ))
+print(min_max( [-1, -6.7, -6,] ))
+print(min_max( [1.6, -4, 6.0, -4.1] ))
 print(min_max( [] ))
 
 #UNIQUE_SORTED TESTS
-print(unique_sorted( [3, 1, 2, 1, 3] ))
+print(unique_sorted( [5, 3, 1, 3, 5] ))
 print(unique_sorted( [] ))
-print(unique_sorted( [-1, -1, 0, 2, 2] ))
-print(unique_sorted( [1.0, 1, 2.5, 2.5, 0] ))
+print(unique_sorted( [-10, -10, 0, 20, 20] ))
+print(unique_sorted( [2.0, 2, 5.2, 5.2, 0] ))
 
 #FLATTEN TESTS
-print(flatten( [[1, 2], [3, 4]] ))
-print(flatten( [[1, 2], (3, 4, 5)] ))
-print(flatten( [[1], [], [2, 3]] ))
-print(flatten( [[1, 2], 'ab'] ))
-
+print(flatten( [[11, 21], [33, 44]] ))
+print(flatten( [[11, 21], (33, 40, 50)] ))
+print(flatten( [[11], [], [22, 30]] ))
+#print(flatten( [[12, 22], 'abhfjsjdhfjs'] ))
