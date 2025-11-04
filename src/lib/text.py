@@ -1,4 +1,5 @@
 from re import findall
+from pathlib import Path
 
 def normalize(text: str, *, casefold: bool = True, yo2e: bool = True) -> str:
     if casefold: text = text.casefold()
@@ -23,6 +24,25 @@ def top_n(freq: dict[str, int], n: int = 5) -> list[tuple[str, int]]:
         try: ans.append(freq_sorted[i])
         except: break 
     return ans
+
+def read_text(path: str | Path, encoding: str = "utf-8") -> str:
+    p = Path(path)
+    try: text = p.read_text(encoding=encoding)
+    except FileNotFoundError: raise FileNotFoundError('Файл не найден')  
+    except UnicodeDecodeError: raise UnicodeDecodeError('unicode=[другая кодировка]') 
+    return ' '.join(text.split())
+
+def write_csv(rows: list[tuple | list], path: str | Path, header: tuple[str, ...] | None = None) -> None:
+    p = Path(path)
+    rows = list(rows)
+    if len(rows): eq = len(rows[0])
+    with p.open("w", newline="", encoding="utf-8") as f:
+        w = csv.writer(f)
+        if header is not None:
+            w.writerow(header)
+        for r in rows:
+            if len(r) != eq: raise ValueError('строки разного размера')
+            w.writerow(r)
 
 # normalize
 assert normalize("ПрИвЕт\nМИр\t") == "привет мир"
