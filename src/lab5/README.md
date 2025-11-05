@@ -15,6 +15,7 @@ def json_to_csv(json_path: str, csv_path: str) -> None:
         except AttributeError: raise ValueError('Внутри находятся не словари') 
         sorted_data = []
         for item in data:
+            if not isinstance(item, dict): raise ValueError('Внутри находятся не словари')
             sorted_item = {key: item.get(key, None) for key in head}
             sorted_data.append(sorted_item)
         with open(csv_path, 'w', encoding='utf-8') as file:
@@ -76,7 +77,7 @@ def csv_to_xlsx(csv_path: str, xlsx_path: str) -> None:
             ws.append(row)
         for col in ws.columns:
             mxl = max( len(str(cell.value or '')) for cell in col )
-            ws.column_dimensions[col[0].column_letter].width = mxl
+            ws.column_dimensions[col[0].column_letter].width = max(mxl+2, 8)
         wb.save(xlsx_path)
     except FileNotFoundError: raise FileNotFoundError('Файл не был найден')
 ```
