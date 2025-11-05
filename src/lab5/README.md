@@ -24,7 +24,7 @@ def json_to_csv(json_path: str, csv_path: str) -> None:
     except FileNotFoundError: raise FileNotFoundError('Файл не был найден')
     except json.decoder.JSONDecodeError: raise ValueError("Неверный формат")
 ```
-![Картинка 1](./screenshots/json_to_csv.png)
+![Картинка 1](./screenshots/json_csv.png)
 ![Картинка 2](./screenshots/empty_json.png)
 ![Картинка 3](./screenshots/filenotfound_json.png)
 ![Картинка 4](./screenshots/not_json.png)
