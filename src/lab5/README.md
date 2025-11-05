@@ -15,6 +15,7 @@ def json_to_csv(json_path: str, csv_path: str) -> None:
         except AttributeError: raise ValueError('Внутри находятся не словари') 
         sorted_data = []
         for item in data:
+            if not isinstance(item, dict): raise ValueError('Внутри находятся не словари')
             sorted_item = {key: item.get(key, None) for key in head}
             sorted_data.append(sorted_item)
         with open(csv_path, 'w', encoding='utf-8') as file:
