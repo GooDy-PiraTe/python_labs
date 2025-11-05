@@ -77,7 +77,7 @@ def csv_to_xlsx(csv_path: str, xlsx_path: str) -> None:
             ws.append(row)
         for col in ws.columns:
             mxl = max( len(str(cell.value or '')) for cell in col )
-            ws.column_dimensions[col[0].column_letter].width = mxl
+            ws.column_dimensions[col[0].column_letter].width = max(mxl+2, 8)
         wb.save(xlsx_path)
     except FileNotFoundError: raise FileNotFoundError('Файл не был найден')
 ```
