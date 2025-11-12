@@ -39,7 +39,7 @@ def main():
 ```
 ![Картинка 1](./screenshots/cat_work.png)
 ![Картинка 2](./screenshots/stats_work.png)
-![Картинка 3](./screenshots/statsNcar_help.png)
+![Картинка 3](./screenshots/statsNcat_help.png)
 
 
 
