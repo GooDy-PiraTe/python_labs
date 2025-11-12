@@ -5,8 +5,8 @@ sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'lib'))
 from text import *
 from io_txt_csv import *
 
-data_path = './data/lab4/input.txt'
-report_path = './data/lab4/report.csv'
+data_path = './data/samples/text.txt'
+report_path = './data/out/report.csv'
 
 text = read_text(data_path)
 

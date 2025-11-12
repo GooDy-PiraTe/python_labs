@@ -20,7 +20,6 @@ def write_csv(rows: list[tuple | list], path: str | Path, header: tuple[str, ...
             if len(r) != eq: raise ValueError('строки разного размера')
             w.writerow(r)
         
-print(read_text("./data/lab4/input.txt"))
-write_csv([("word","count"),("test",3)], "data/lab4/check.csv") 
+print(read_text("./data/samples/text.txt"))
 
     
