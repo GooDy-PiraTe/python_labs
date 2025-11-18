@@ -265,7 +265,7 @@ def test_csv_to_json_monolith(tmp_path):
 
 
 ```
-общий прогон pytest на всей папке python_labs 
+общий прогон pytest на python_labs 
 ```
 pytest -q
 ```
