@@ -1,5 +1,5 @@
-st = input('ФИО: ')
+st = input("ФИО: ")
 ln, n, nof = st.split()
 print(ln, n, nof)
-print(f"Инициалы: {ln[0]+n[0]+nof[0]}.") 
-print(f'Длина (символов): {len(ln) + len(n) + len(nof) + 2}')
+print(f"Инициалы: {ln[0]+n[0]+nof[0]}.")
+print(f"Длина (символов): {len(ln) + len(n) + len(nof) + 2}")

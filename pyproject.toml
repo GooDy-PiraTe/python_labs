@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools >= 77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pna_labs"
+version = "1.0.0"
+dependencies = [
+    "et_xmlfile>=2.0.0",
+    "openpyxl>=3.1.5"
+] 
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0",
+  "black>=24.0"
+]

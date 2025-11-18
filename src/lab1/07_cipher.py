@@ -11,16 +11,16 @@ for i in range(len(line)):
         f_i = i
         origin.append(symb)
     if word_started and symb.isdigit() and not s_i:
-        s_i = i+1
+        s_i = i + 1
         step = s_i - f_i
-    if word_started and step and (i-f_i)%step == 0:
+    if word_started and step and (i - f_i) % step == 0:
         origin.append(symb)
-    if word_started and symb == '.':
+    if word_started and symb == ".":
         break
 print(f"out: {''.join(origin)}")
-        
 
-'''
+
+"""
 Ht1eadljjl12ojh.
 H t1 e ad l jj l 12 o jh .
 0 12 3 45 6 78 9
@@ -30,6 +30,4 @@ hfh H t1e a dl
 
 H t1e a dld r
 0 123 4 567 8 
-'''
-        
-
+"""
