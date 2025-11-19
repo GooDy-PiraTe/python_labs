@@ -119,7 +119,7 @@ pytest, test_json_csv
 ```python
 import pytest
 import json, csv
-from src.lab05.json_csv import json_to_csv, csv_to_json
+from src.lab5.json_csv import json_to_csv, csv_to_json
 
 
 def test_json_to_csv_roundtrip(tmp_path):
