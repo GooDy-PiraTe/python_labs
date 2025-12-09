@@ -2,6 +2,7 @@ import csv
 from pathlib import Path
 from src.lab8.models import Student
 
+
 class Group:
     def __init__(self, storage_path: str):
         self.path = Path(storage_path)
@@ -70,6 +71,3 @@ class Group:
 
 if __name__ == "__main__":
     test_group = Group("./data/lab9/students.csv")
-
-
-test_group.update("Иванов Иван", group="SE-02", gpa="2.6")
