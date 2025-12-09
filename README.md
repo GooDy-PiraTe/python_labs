@@ -32,6 +32,10 @@ src/lab7
 src/lab8
 [README](src/lab8/README.md)
 
-## Lab8
+## Lab9
 src/lab9
 [README](src/lab9/README.md)
+
+## Lab10
+src/lab10
+[README](src/lab10/README.md)
