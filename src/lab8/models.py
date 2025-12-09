@@ -14,7 +14,7 @@ class Student:
             datetime.strptime(self.birthdate, "%Y-%m-%d")
         except ValueError:
             raise ValueError("warning: birthdate format might be invalid")
-        if not (0.0 <= self.gpa <= 5.0):
+        if not (0.0 <= float(self.gpa) <= 5.0):
             raise ValueError("gpa must be between 0 and 5")
 
     def __str__(self):
